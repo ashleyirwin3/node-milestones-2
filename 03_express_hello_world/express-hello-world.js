@@ -2,6 +2,8 @@
 
 const express = require('express');
 const app = express();
+// console.log(process.env.PORT)
+const port = process.env.PORT || 3000
 
 const requestTime = (req, res, next) => {
   req.requestedTime = Date.now();
@@ -18,6 +20,6 @@ app.get('/hello', (req, res, next) => {
   res.sendFile(__dirname + '/public/hello.html')
 })
 
-app.listen(3000, () => {
+app.listen(port, () => {
  console.log('this is the port you are looking for')
 })
