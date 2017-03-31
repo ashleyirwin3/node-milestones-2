@@ -7,7 +7,6 @@ server.on('request', (req, res) => {
     res.write(data)
     res.end()
       console.log('Request received for:', req.url)
-      res.end('OK')
   })
 })
 
