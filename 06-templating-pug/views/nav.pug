@@ -1,9 +1,9 @@
 //- extends index.pug
 
 block content
-  p please work dear god
+  p
 
-
-  ul
-    li
-      a(href='/about')
+  .nav-bar
+    a(class={active: currentView !== "home"} href='/') Home
+    a(class={active: currentView !== "about"} href='/about') About
+    a(class={active: currentView !== "inventory"} href='/inventory') Inventory

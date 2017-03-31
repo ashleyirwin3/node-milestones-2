@@ -8,7 +8,7 @@ app.use(express.static('public'))
 app.set('view engine', 'pug')
 
 
-const menu = ["Carrot Cake-$1,000,000", "Orange Creme Pie-$1,000,000", "Grapefruit Brownies-$1,000,000"]
+const menu = ["Carrot Cake: $2.00", "Cupcakes: $3.00", "Cookies: $1.50", "Ice Cream: $3.50", "Taffy: $1.00"]
 app.get('/', (req, res, next) => {
   res.render('index', {subtitle: "Welcome"})
 })

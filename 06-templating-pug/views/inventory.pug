@@ -2,8 +2,9 @@ extends index.pug
 
 block content
   p
-    content Look at our great menu. It's the best menu
+    content Here are the delicious items we offer
   .menu
     ul
       each item in menu
         li #{item}
+  include nav.pug
